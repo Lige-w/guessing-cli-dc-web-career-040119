@@ -4,7 +4,7 @@ def run_guessing_game
   puts "Guess a number between 1 and 6."
 
   mystery_number = rand(1..6)
-  input = gets.chomp
+  input = binding.pry
 
   if input.to_i.between?(1, 6)
     if input.to_i == mystery_number
@@ -14,5 +14,3 @@ def run_guessing_game
 
   puts "Goodbye!"
 end
-
-binding.pry

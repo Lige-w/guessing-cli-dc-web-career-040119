@@ -7,13 +7,12 @@ def run_guessing_game
   binding.pry
   input = gets.chomp
 
-  if input == 'exit'
-    puts 'Goodbye!'
-  elsif input.to_i == mystery_number
-    puts "You guessed the correct number!"
-  elsif input.to_i != mystery_number
-    puts "The computer guessed #{mystery_number}."
-  else
-    puts "Invalid input."
+  while input != 'exit' do
+    if input.to_i == mystery_number
+      puts "You guessed the correct number!"
+    elsif input.to_i != mystery_number
+      puts "The computer guessed #{mystery_number}."
+    end
   end
+  puts "Goodbye!"
 end

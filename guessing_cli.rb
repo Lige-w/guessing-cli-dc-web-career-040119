@@ -15,6 +15,5 @@ def run_guessing_game
     puts "The computer guessed #{mystery_number}."
   else
     puts "Invalid input."
-    end
   end
 end

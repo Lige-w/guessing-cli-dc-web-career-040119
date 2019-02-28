@@ -6,7 +6,7 @@ def run_guessing_game
   mystery_number = rand(1..6)
   binding.pry
   input = gets.chomp
-  
+
   if input == 'exit'
     puts 'Goodbye!'
   elsif input.to_i.between?(1, 6)

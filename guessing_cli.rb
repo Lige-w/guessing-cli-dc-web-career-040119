@@ -7,9 +7,7 @@ def run_guessing_game
 
   if input == 'exit'
     puts 'Goodbye!'
-  elsif input.to_i.between?(1, 6)
-    if input.to_i == mystery_number
+  elsif input.to_i == mystery_number
       puts "You guessed the correct number!"
-    end
   end
 end
